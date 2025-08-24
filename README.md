@@ -1,18 +1,17 @@
-# Transformer Translation From Scratch
-
-
-A minimal, from-scratch implementation of a Transformer model for neural machine translation (NMT) using PyTorch, based on the seminal paper:
-
+# Language Translator using Transformer From Scratch
+This project is a minimal, from-scratch implementation of a Transformer model for neural machine translation (NMT) using PyTorch. It's based on the seminal paper, "Attention Is All You Need" (Vaswani et al., 2017). 
 > Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). [Attention Is All You Need](https://arxiv.org/abs/1706.03762). *Advances in Neural Information Processing Systems*, 30.
+
+The goal is to demonstrate a complete end-to-end workflow for building, training, and evaluating a sequence-to-sequence translation model. The model is specifically configured for translating sentences from English to French.A minimal, from-scratch implementation of a Transformer model for neural machine translation (NMT) using PyTorch, based on the seminal paper.
 
 This project demonstrates how to build, train, and evaluate a sequence-to-sequence translation model from scratch.
 
 ## Features
-- Custom Transformer encoder-decoder architecture
-- Tokenization using HuggingFace Tokenizers
-- Training/validation on OPUS Books
-- BLEU, Word Error Rate, and Character Error Rate evaluation
-- TensorBoard logging
+***Custom Architecture:*** A complete, custom implementation of the Transformer encoder-decoder architecture.
+***Tokenization:*** Utilizes HuggingFace Tokenizers for efficient text processing.
+***Training & Evaluation:*** Trained and validated on the OPUS Books dataset, with performance measured using BLEU, Word Error Rate (WER), and Character Error Rate (CER).
+***Reproducibility:*** Integrated TensorBoard logging to monitor training and performance metrics.
+***Visualization:*** Includes tools to visualize attention weights, providing insights into the model's decision-making process.
 
 ## Installation
 
@@ -69,7 +68,7 @@ Use these notebooks for analysis, debugging, and demonstration. Open them with J
 ## Results
 
 **Note:**
-I achieved the following results after just 15 hours of training (German to English):
+After just 15 hours of training (English to French), the model produced strong translation performance. The results achieved include a promising BLEU score along with low Word and Character Error Rates, indicating a high degree of translation accuracy.
 
 BLEU: 55.73 (typically varies between 50–55),
 WER: 0.67,
